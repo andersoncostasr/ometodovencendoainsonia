@@ -1,0 +1,325 @@
+
+$yellow: #FFB901;
+$black: #000;
+$green: #14CB2D;
+$white: #fff;
+$gray: #f5f5f5;
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    padding: 30px 0;
+}
+
+ul{
+    padding-left: 15px;
+}
+
+h1 {
+    font-size: 31px;
+    font-weight: 900;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p, li{
+    font-size: 18px;
+    color: $black;
+}
+
+
+small{
+    color: $black;
+    font-size: 16px;
+}
+
+.bg-yellow{
+    background-color: $yellow;
+    color: $black;
+}
+
+.bg-gray{
+    background-color: $gray;
+}
+
+.btn-primary{
+    font-size: 23px;
+    background-color: $green;
+    color: $white;
+    border-radius: 50px;
+    padding: 30px 60px;
+    text-transform: uppercase;
+    font-weight: 800;
+    box-shadow: 0 0 25px rgb(20 203 45 / 50%);
+    line-height: 1;
+    border: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    white-space: normal !important;
+    &:hover{
+        opacity: 0.9;
+        background-color: $yellow;
+        color: $black;
+    }
+}
+
+header{
+    padding: 30px 0;
+    li{
+        list-style-image: url('/assets/img/arrow-right.svg');
+        padding-bottom: 15px;
+    }
+    li:last-child{
+        padding-bottom: 0 !important;
+    }
+    .ebook{
+        margin-top: 30px;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 50px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+} 
+
+.cookieTimer .time, footer .cookieTimer .time, .preco .cookieTimer .time {
+    font-size: 60px;
+    font-weight: 900;
+  }
+.minutos, footer .minutos, .preco .minutos, header .segundos, footer .segundos, .preco .segundos {
+    color: $black;
+  }
+.minutos, footer .minutos, .preco .minutos {
+    position: relative;
+    right: 10px;
+    bottom: 30px;
+}
+.segundos, footer .segundos, .preco .segundos {
+    position: relative;
+    left: 10px;
+    bottom: 30px;
+}
+
+  .plus {
+    display: none !important;
+  }
+  
+  .minus {
+    display: none !important;
+  }
+  
+  .cancel {
+    display: none !important;
+  }
+  
+  .name {
+    display: none !important;
+  }
+  
+
+.bonus{
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+    h3 span{
+        background-color: $black;
+        color: #fff;
+        font-weight: bold;
+        padding: 3px 5px;
+    }
+}
+
+.preco{
+    .box{
+        background: $yellow;
+        max-width: 600px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+        padding: 10px 15px;
+    }
+    .vl_pgto {
+        font-weight: 800;
+        font-style: italic;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-top: 20px;
+      }
+    .pg_top {
+        font-size: 45px;
+        margin: 0 !important;
+      }
+    .pg_top span {
+        font-size: 70px;
+      }
+     .pg_bottom {
+        font-size: 24px;
+        margin: 0 0 15px 0;
+      }
+     .mark-red {
+        background: #ff7214;
+        color: #fff;
+        margin-top: -20px;
+        margin-bottom: 20px;
+      }
+      h4{
+          font-weight: bold;
+          color: $black;
+      }
+      .btn-primary{
+          background: red;
+          color: $white;
+      }
+}
+
+.garantia{
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.depoimentos img{
+    display: block;
+    margin: 0 auto;
+}
+
+footer{
+    background: $black;
+    padding: 20px 0;
+}
+
+footer p{
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-nav {
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    .texto{
+        background: $yellow;
+        height: 20px;
+    }
+    p{
+        color: #fff;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+        margin-bottom: -10px;
+    }
+    .labels{
+        position: relative;
+        bottom: 20px;
+        left: 15px;
+        font-size: 11px;
+    }
+    .minutos{
+        left: 5px;
+    }
+    .segundos{
+        left: 5px;
+        position: relative;
+    }
+}
+
+.btn-primary-sticky{
+    @extend .btn-primary;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+
+/*Só para Mobile */
+@media screen and (max-width: 1023px){
+    header{
+        .ebook{
+            width: 80%;
+            float: none;
+            margin: -20px auto 10px auto !important;
+            display: block;
+        }
+    }
+    .btn-primary {
+        font-size: 21px;
+        padding: 15px 30px;
+    }
+    h1{
+        font-size: 24px !important;
+        line-height: 30px !important;
+        text-align: center !important;
+    }
+    .btn-primary-sticky{
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    .footer-nav .cookieTimer .time, footer .cookieTimer .time, .preco .cookieTimer .time {
+        font-size: 45px;
+        font-weight: 900;
+        position: relative;
+        top: 15px;
+        left: 7px;
+    }
+    .footer-nav .minutos {
+        left: -5px;
+        bottom: -5px;
+        color: #fff;
+    }
+    .footer-nav .segundos {
+        left: 10px;
+        bottom: -5px;
+        color: #fff;
+    }
+}
+
+
+/*Só para Desktop */
+@media screen and (min-width: 1023px){
+    header{
+        padding: 60px 0;
+        .beneficios{
+            margin-top: -260px;
+        }
+    }
+    section{
+        padding: 60px 0;
+    }
+    .btn-primary {
+        font-size: 20px;
+        padding: 20px 30px;
+        max-width: 400px;
+    }
+    .bandeiras{
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+    header .bandeiras{
+        display: unset;
+        float: left;
+    }
+}
+    
